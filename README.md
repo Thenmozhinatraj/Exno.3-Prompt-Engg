@@ -4,6 +4,7 @@
 ### Aim: To design an AI-powered chatbot that assists customers in resolving issues related to product troubleshooting, order tracking, and general inquiries. The chatbot should handle various customer queries efficiently while maintaining a conversational and user-friendly tone. This experiment demonstrates different prompt engineering techniques — Straightforward Prompts, Tabular Format Prompting, Missing-Word (cloze) Prompting, and Preceding Question Prompting — and shows example prompts + expected behavior for each.
 
 ### Algorithm: 
+```
 1. Straightforward Prompts
 Objective: Give the model a clear, explicit instruction for common tasks (short, deterministic responses).
 Prompt pattern (example):
@@ -67,7 +68,8 @@ Prompt snippet: "Respond to order inquiries in ≤ 50 words, conversational tone
 Objective: Reduce misunderstanding by reflecting the user's issue before replying.
 Example: Customer: "How do I reset my password?"
 Bot: "You're asking how to reset your password, right? Here's how…"
-
+```
+```
 Example Prompts & Sample Conversations (Combined Techniques)
 1. Straightforward + Missing-Word
 Prompt: provide a template reply for "order delivered" and instruct model to fill [date] and [name].
@@ -80,7 +82,7 @@ Model uses table to classify issue, but if classification confidence low (ambigu
 
 3. Chain-of-Thought + Few-Shot
 Provide step-by-step diagnostic examples for three device problems, then ask the model to handle "My app keeps crashing" and produce steps.
-
+```
 
 
 
