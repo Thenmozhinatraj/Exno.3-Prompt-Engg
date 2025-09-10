@@ -89,4 +89,4 @@ Provide step-by-step diagnostic examples for three device problems, then ask the
 
 
 ## Result:
-The various types of Prompts are executed successfully.
+```The various types of Prompts are executed successfully.```
